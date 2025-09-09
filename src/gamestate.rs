@@ -23,7 +23,7 @@ impl Display for GameState {
             }
             state_str.push_str("\r\n");
         }
-        write!(f, "{}\r\n \x1b[1;93m{}\x1b[0m\r\n", state_str, self.title,)
+        write!(f, "{}\r\n \x1b[1;97m{}\x1b[0m\r\n", state_str, self.title,)
     }
 }
 

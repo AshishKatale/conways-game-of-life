@@ -7,7 +7,7 @@ $ cd conways-game-of-life
 $ cargo run --release
 ```
 
-<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/20034cea-2dc3-4617-a1b3-599d4e7b1687" />
+<img width="640" height="540" alt="image" src="https://github.com/user-attachments/assets/54fd9b72-ce8d-4694-adee-36c76ec09a64" />
 
 ```
 $ git clone https://github.com/AshishKatale/conways-game-of-life.git
@@ -15,4 +15,4 @@ $ cd conways-game-of-life
 $ cargo run --release src/states/101.csv
 ```
 
-<img width="640" height="480" alt="image" src="https://github.com/user-attachments/assets/4c54c596-66d9-4615-bcc9-cffd3e514096" />
+<img width="640" height="540" alt="image" src="https://github.com/user-attachments/assets/d52f0c80-3251-481d-8dda-546771d13576" />

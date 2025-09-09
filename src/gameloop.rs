@@ -85,12 +85,18 @@ impl GameLoop {
     }
 
     fn print_help(&mut self) {
-        let help = "Quit: q/Esc/^C | Pause/Resume: Space | Toggle grid: g\r\n \
-                    Previous step: p | Next step: n | Slow down: - | Speed up: +\r\n";
+        let help = "+---------------------+---------------------+----------------+\r\n \
+                    | Quit Game: q/Esc/^C | Pause/Resume: Space | Toggle grid: g |\r\n \
+                    +---------------------+---------------------+----------------+---------------+\r\n \
+                    |  Previous step: p   |     Next step: n    |  Slow down: -  |  Speed up: +  |\r\n \
+                    +---------------------+---------------------+----------------+---------------+\r\n";
         if self.running {
-            print!(" \x1b[1;95mFrame rate: {} fps\x1b[0m\r\n", self.frame_rate);
+            print!(" \x1b[1;93mFrame rate: {} fps\x1b[0m\r\n", self.frame_rate);
         } else {
-            print!(" \x1b[9;95mFrame rate: {} fps\x1b[0m\r\n", self.frame_rate);
+            print!(
+                " \x1b[9;93mFrame rate: {} fps\x1b[0;91m (PAUSED)\x1b[0m\r\n",
+                self.frame_rate
+            );
         }
         print!(" \x1b[1;94m{}\x1b[0m", help);
     }
